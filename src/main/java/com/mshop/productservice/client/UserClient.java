@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@FeignClient(value = "UserClient", url = "${auth-service.url}")
+@FeignClient(value = "UserClient", url = "${auth-service.url}/api")
 public interface UserClient {
 
     @GetMapping("/users/exist-by-user-id")
